@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ficha de Cuidado (beta)</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/variaveis.css">
+<link rel="stylesheet" href="assets/css/reset.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsivo.css">
+<script src="assets/js/utilidades.js" defer></script>
+<script src="assets/js/perfis.js" defer></script>
+<script src="assets/js/dados.js" defer></script>
+<script src="assets/js/sessao.js" defer></script>
+<script src="assets/js/algoritmos.js" defer></script>
+<script src="assets/js/pendencias.js" defer></script>
+<script src="assets/js/telas.js" defer></script>
+<script src="assets/js/script.js" defer></script>
+</head>
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="topo-in">
+    <div class="marca"><span class="selo" aria-hidden="true">FC</span><div><b>Ficha de Cuidado</b><small>Protótipo acadêmico em versão beta, com dados fictícios</small></div></div>
+    <div class="quem"><div id="quem" hidden></div><button class="bt sec peq" id="sair" hidden>Sair</button></div>
+  </div>
+</header>
+<div class="casco">
+  <nav class="abas-sis" id="nav" aria-label="Seções do sistema" hidden></nav>
+  <main id="conteudo" tabindex="-1"></main>
+</div>
+<footer class="rodape">
+  <p>Protótipo acadêmico (UNISA, 2026), sem vínculo oficial com a Prefeitura de São Paulo. Todos os dados são fictícios. Não substitui a orientação de profissionais de saúde.</p>
+  <div class="rodape-acoes"><label for="tema">Tema</label><select id="tema"><option value="auto">Automático</option><option value="claro">Claro</option><option value="escuro">Escuro</option></select><button type="button" class="link-aviso" id="recomecar">Recomeçar a demonstração</button></div>
+</footer>
+<div class="status" id="status" role="status" aria-live="polite"></div>
+<dialog class="aviso" id="aviso" aria-labelledby="aviso-titulo" aria-describedby="aviso-desc">
+  <div class="aviso-topo"><h2 id="aviso-titulo" tabindex="-1">Antes de entrar: este é um projeto acadêmico</h2>
+    <p id="aviso-desc">Protótipo do Projeto Integrador de Vinícius Marques da Silva, Universidade Santo Amaro (UNISA), 2026.</p></div>
+  <div class="aviso-corpo">
+    <p><b>Tudo aqui é fictício.</b> Os estudantes, as famílias, os servidores e a escola foram inventados. O sistema não tem ligação com a Prefeitura de São Paulo, com o EOL, com o SIGPAE nem com sistemas de saúde.</p>
+    <h3>Dois acessos da escola</h3>
+    <p>Nesta fase, o programa mostra só o lado da escola, com duas contas que simulam duas funções reais:</p>
+    <ul>
+      <li><b>Secretaria:</b> cobra das famílias os laudos de dieta, a DVA e as orientações de emergência, e registra o que recebe.</li>
+      <li><b>Gestão:</b> faz tudo o que a secretaria faz, confere e envia os laudos à CODAE, acompanha o NAAPA e vê o registro de acessos.</li>
+    </ul>
+    <h3>Por que assim</h3>
+    <p>Cada pessoa vê só o que precisa para a sua função, e a escola sabe o que fazer com a criança sem ver diagnóstico. As duas contas no mesmo programa permitem comparar o que cada função faz, sem servidor nem cadastro. Num sistema real, cada servidor entraria com o próprio login institucional.</p>
+    <p><b>Este sistema não substitui a orientação de médicos, enfermeiros ou outros profissionais de saúde.</b> Ele só organiza o que a escola precisa fazer a partir dos documentos que a família entrega.</p>
+    <p>Outras áreas, como a saúde (UBS), o NAAPA e até órgãos do sistema de Justiça, poderão ter acesso em fases futuras, cada uma vendo só o que lhe cabe.</p>
+  </div>
+  <div class="aviso-rodape"><button class="bt" id="aviso-ok">Entendi, ir para o login</button></div>
+</dialog>
+</body>
+</html>
