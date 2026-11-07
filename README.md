@@ -6,7 +6,7 @@ Protótipo web, em HTML, CSS e JavaScript puros, para a escola acompanhar laudos
 
 ## Demonstração
 
-- Online (GitHub Pages): `https://viniciussumy.github.io/ficha-de-cuidado/` (ativar em Settings → Pages)
+- Online (GitHub Pages): `https://viniciussumy.github.io/Saude-Escolar---PMSP/` (ativar em Settings → Pages)
 - Local: abra o `index.html` no navegador. Não há instalação nem servidor, e a página não carrega nada de fora.
 
 ## Estrutura de pastas
