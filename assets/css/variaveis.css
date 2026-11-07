@@ -1,0 +1,25 @@
+/* Tokens do sistema visual: cores (claro e escuro), tipografia, espaçamento, raios e sombras */
+:root{
+  --papel:#F2F4F3;--folha:#FFFFFF;--tinta:#16202A;--tinta2:#4A5662;--fio:#D8DDE1;--fio2:#E9ECEE;--borda:#6B7783;--borda-ui:#808C97;
+  --azul:#0E4A60;--azul-fundo:#E2EEF2;--sobre-azul:#FFFFFF;
+  --topo:#0C3442;--sobre-topo:#F1F7F9;--topo2:#A9C9D4;
+  --atraso:#A12B2C;--atraso-fundo:#FCEDEC;--perto:#7A4F00;--perto-fundo:#FFF3D6;--ok:#22603A;--ok-fundo:#E5F2E9;--neutro:#4A5662;--wa:#1B6B3E;
+  --t-xs:.8rem;--t-sm:.9rem;--t-base:1rem;--t-md:1.15rem;--t-lg:1.35rem;--t-xl:1.75rem;--t-2xl:2rem;
+  --e-1:4px;--e-2:8px;--e-3:12px;--e-4:16px;--e-5:24px;--e-6:32px;--e-7:40px;
+  --r-sm:9px;--raio:12px;--r-lg:16px;--r-pill:999px;
+  --sombra-forte:0 8px 24px rgba(0,0,0,.25);--sombra-dialogo:0 18px 60px rgba(0,0,0,.35);--veu:rgba(8,20,26,.6);--realce-topo:rgba(255,255,255,.1);
+  --cartao-tinta:#111;--cartao-tinta2:#333;--cartao-alerta:#9E2A2B;--cartao-fio:#bbb;--cartao-fundo:#fff;
+  --sombra:0 1px 2px rgba(15,30,38,.05),0 6px 18px rgba(15,30,38,.05);
+  --fonte:"Atkinson Hyperlegible","Segoe UI",system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-tema="claro"]){
+  --papel:#0F151A;--folha:#172027;--tinta:#E6EBEE;--tinta2:#A6B1BA;--fio:#2A3640;--fio2:#1F2930;--borda:#8794A0;--borda-ui:#6E7B87;
+  --azul:#8CC8DD;--azul-fundo:#1B3340;--sobre-azul:#0A1A20;--topo:#0A1C24;--sobre-topo:#E6EFF2;--topo2:#8FB3C0;
+  --atraso:#FF9F98;--atraso-fundo:#3A1C1C;--perto:#F2C462;--perto-fundo:#3A2E12;--ok:#86D6A0;--ok-fundo:#16301F;--neutro:#A6B1BA;--wa:#86D6A0;
+  --sombra:none;color-scheme:dark}}
+:root[data-tema="escuro"]{
+  --papel:#0F151A;--folha:#172027;--tinta:#E6EBEE;--tinta2:#A6B1BA;--fio:#2A3640;--fio2:#1F2930;--borda:#8794A0;--borda-ui:#6E7B87;
+  --azul:#8CC8DD;--azul-fundo:#1B3340;--sobre-azul:#0A1A20;--topo:#0A1C24;--sobre-topo:#E6EFF2;--topo2:#8FB3C0;
+  --atraso:#FF9F98;--atraso-fundo:#3A1C1C;--perto:#F2C462;--perto-fundo:#3A2E12;--ok:#86D6A0;--ok-fundo:#16301F;--neutro:#A6B1BA;--wa:#86D6A0;
+  --sombra:none;color-scheme:dark}

@@ -1,0 +1,12 @@
+/* Base: box-sizing, foco visível, link de pular e classes de acessibilidade */
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:88px}
+@media (max-width:900px){html{scroll-padding-top:128px}}
+body{margin:0;background:var(--papel);color:var(--tinta);font:var(--t-base)/1.55 var(--fonte);font-variant-numeric:tabular-nums}
+a{color:var(--azul)}
+:focus-visible{outline:3px solid var(--azul);outline-offset:2px}
+.pular{position:absolute;left:8px;top:-60px;background:var(--azul);color:var(--sobre-azul);padding:10px 14px;z-index:60;border-radius:var(--r-sm)}
+.pular:focus{top:8px}
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
